@@ -16,8 +16,8 @@ jobs:
           - nrfmicro_13
           - proton_c
         shield:
-          - a_dux_dux_left
-          - a_dux_dux_right
+          - a_quax_quax_left
+          - a_quax_quax_right
         cmake-args: [""]
     steps:
       - name: Checkout

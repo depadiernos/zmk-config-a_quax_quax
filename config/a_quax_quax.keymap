@@ -1,0 +1,91 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+        combos {
+            compatible = "zmk,combos";
+            combo_tab {
+                timeout-ms = <75>;
+                key-positions = <10 14>;
+                bindings = <&kp TAB>;
+            };
+            combo_esc {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp ESC>;
+            }; 
+						combo_grave {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp GRAVE>;
+            }; 
+						combo_quote {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp SQT>;
+            }; 
+						combo_backspace {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp BSPC>;
+            }; 
+						combo_delete {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp DEL>;
+            }; 
+            combo_adjust {
+                timeout-ms = <75>;
+                key-positions = <30 33>;
+                bindings = <&sl 2>;
+            };
+    };
+        behaviors {
+            hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <200>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+    };
+	keymap {
+		compatible = "zmk,keymap";
+
+		base_layer {
+			bindings = <
+				&kp Q    &kp W       &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O     &kp P
+				&kp A    &hm LCTRL S &hm LALT D &hm LGUI F &kp G      &kp H     &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+				&kp Z    &kp X       &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp SLASH
+				                                &mo 1      &kp LSHFT  &kp SPACE &lt 1 ENTER
+			>;
+		};
+		lower_layer {
+      bindings = <
+    		&kp N1    &kp N2    &kp N3    &kp N4   &kp N5   &kp C_VOL_UP &kp HOME &kp PG_DN    &kp PG_UP  &kp END         
+    		&kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp C_VOL_DN &kp LEFT &kp DOWN     &kp UP     &kp RIGHT
+    		&kp MINUS &kp EQUAL &kp BSLH  &kp LBKT &kp RBKT &kp C_MUTE   &bt BT_CLR &bt BT_PRV &bt BT_NXT &bt 0  
+        		              	          &trans   &trans   &trans       &trans
+      >;
+    };
+
+  	adjust_layer {
+    	bindings = <
+  			&kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)   &kp LS(N5)   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+  			&kp LS(N6)    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)   &kp LS(N0)   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+  			&kp LS(MINUS) &kp LS(EQUAL) &kp LS(BSLH)  &kp LS(LBKT) &kp LS(RBKT) &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
+  																                &trans       &trans       &trans  &trans
+    	>;
+  	};
+	};
+};
