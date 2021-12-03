@@ -1,8 +1,8 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_a_quax_quax_LEFT
+config SHIELD_A_QUAX_QUAX_LEFT
 	def_bool $(shields_list_contains,a_quax_quax_left)
 
-config SHIELD_a_quax_quax_RIGHT
+config SHIELD_A_QUAX_QUAX_RIGHT
 	def_bool $(shields_list_contains,a_quax_quax_right)

@@ -1,24 +1,24 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_a_quax_quax_LEFT
+if SHIELD_A_QUAX_QUAX_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Architeuthis Dux Dux"
+	default "a quax quax"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_a_quax_quax_RIGHT
+if SHIELD_A_QUAX_QUAX_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Architeuthis Dux Dux Right"
+	default "a quax quax right"
 
 endif
 
-if SHIELD_a_quax_quax_LEFT || SHIELD_a_quax_quax_RIGHT
+if SHIELD_A_QUAX_QUAX_LEFT || SHIELD_A_QUAX_QUAX_RIGHT
 
 config ZMK_SPLIT
 	default y
