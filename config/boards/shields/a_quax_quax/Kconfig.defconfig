@@ -14,7 +14,7 @@ endif
 if SHIELD_A_QUAX_QUAX_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "a quax quax right"
+	default "a quax quax r"
 
 endif
 

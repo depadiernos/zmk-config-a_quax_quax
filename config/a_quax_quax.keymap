@@ -10,44 +10,44 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-        combos {
-            compatible = "zmk,combos";
-            combo_tab {
-                timeout-ms = <75>;
-                key-positions = <10 14>;
-                bindings = <&kp TAB>;
-            };
-            combo_esc {
-                timeout-ms = <75>;
-                key-positions = <0 4>;
-                bindings = <&kp ESC>;
-            }; 
-						combo_grave {
-                timeout-ms = <75>;
-                key-positions = <0 1 2>;
-                bindings = <&kp GRAVE>;
-            }; 
-						combo_quote {
-                timeout-ms = <75>;
-                key-positions = <7 8 9>;
-                bindings = <&kp SQT>;
-            }; 
-						combo_backspace {
-                timeout-ms = <75>;
-                key-positions = <2 3>;
-                bindings = <&kp BSPC>;
-            }; 
-						combo_delete {
-                timeout-ms = <75>;
-                key-positions = <3 4>;
-                bindings = <&kp DEL>;
-            }; 
-            combo_adjust {
-                timeout-ms = <75>;
-                key-positions = <30 33>;
-                bindings = <&sl 2>;
-            };
-    };
+    //     combos {
+    //         compatible = "zmk,combos";
+    //         combo_tab {
+    //             timeout-ms = <75>;
+    //             key-positions = <10 14>;
+    //             bindings = <&kp TAB>;
+    //         };
+    //         combo_esc {
+    //             timeout-ms = <75>;
+    //             key-positions = <0 4>;
+    //             bindings = <&kp ESC>;
+    //         }; 
+		// 				combo_grave {
+    //             timeout-ms = <75>;
+    //             key-positions = <0 1 2>;
+    //             bindings = <&kp GRAVE>;
+    //         }; 
+		// 				combo_quote {
+    //             timeout-ms = <75>;
+    //             key-positions = <7 8 9>;
+    //             bindings = <&kp SQT>;
+    //         }; 
+		// 				combo_backspace {
+    //             timeout-ms = <75>;
+    //             key-positions = <2 3>;
+    //             bindings = <&kp BSPC>;
+    //         }; 
+		// 				combo_delete {
+    //             timeout-ms = <75>;
+    //             key-positions = <3 4>;
+    //             bindings = <&kp DEL>;
+    //         }; 
+    //         combo_adjust {
+    //             timeout-ms = <75>;
+    //             key-positions = <30 33>;
+    //             bindings = <&sl 2>;
+    //         };
+    // };
         behaviors {
             hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
