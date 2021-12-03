@@ -24,22 +24,22 @@
             }; 
 						combo_grave {
                 timeout-ms = <75>;
-                key-positions = <0 4>;
+                key-positions = <0 1 2>;
                 bindings = <&kp GRAVE>;
             }; 
 						combo_quote {
                 timeout-ms = <75>;
-                key-positions = <0 4>;
+                key-positions = <7 8 9>;
                 bindings = <&kp SQT>;
             }; 
 						combo_backspace {
                 timeout-ms = <75>;
-                key-positions = <0 4>;
+                key-positions = <2 3>;
                 bindings = <&kp BSPC>;
             }; 
 						combo_delete {
                 timeout-ms = <75>;
-                key-positions = <0 4>;
+                key-positions = <3 4>;
                 bindings = <&kp DEL>;
             }; 
             combo_adjust {
