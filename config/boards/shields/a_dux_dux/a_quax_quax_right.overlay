@@ -7,5 +7,5 @@
 #include "a_quax_quax.dtsi"
 
 &default_transform {
-	col-offset = <17>;
+	col-offset = <16>;
 };
