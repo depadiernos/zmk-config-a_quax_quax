@@ -13,37 +13,32 @@
   combos {
     compatible = "zmk,combos";
       combo_tab {
-          timeout-ms = <75>;
+          timeout-ms = <50>;
           key-positions = <10 14>;
           bindings = <&kp TAB>;
       };
       combo_esc {
-          timeout-ms = <75>;
+          timeout-ms = <50>;
           key-positions = <0 4>;
           bindings = <&kp ESC>;
       }; 
       combo_grave {
-          timeout-ms = <75>;
+          timeout-ms = <50>;
           key-positions = <0 1 2>;
           bindings = <&kp GRAVE>;
       }; 
       combo_quote {
-          timeout-ms = <75>;
-          key-positions = <7 8 9>;
+          timeout-ms = <50>;
+          key-positions = <10 11 12>;
           bindings = <&kp SQT>;
       }; 
       combo_backspace {
-          timeout-ms = <75>;
-          key-positions = <2 3>;
+          timeout-ms = <50>;
+          key-positions = <2 3 4>;
           bindings = <&kp BSPC>;
       }; 
-      combo_delete {
-          timeout-ms = <75>;
-          key-positions = <3 4>;
-          bindings = <&kp DEL>;
-      }; 
       combo_adjust {
-          timeout-ms = <75>;
+          timeout-ms = <50>;
           key-positions = <30 33>;
           bindings = <&sl 2>;
       };
@@ -53,7 +48,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <175>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -64,10 +59,10 @@
 
 		base_layer {
 			bindings = <
-				&kp Q    &kp W       &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O       &kp P
-				&kp A    &hm LCTRL S &hm LALT D &hm LGUI F &kp G      &kp H     &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
-				&kp Z    &kp X       &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT     &kp SLASH
-                                        &mo 1      &kp LSHIFT &kp SPACE &lt 1 ENTER
+				&kp Q  &kp W       &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O       &kp P
+				&kp A  &hm LCTRL S &hm LALT D &hm LGUI F &kp G      &kp H     &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+				&kp Z  &kp X       &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT     &kp SLASH
+                                      &mo 1      &kp LSHIFT &kp SPACE &lt 1 ENTER
 			>;
 		};
     
