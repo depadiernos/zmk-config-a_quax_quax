@@ -34,7 +34,7 @@
       }; 
       combo_backspace {
           timeout-ms = <50>;
-          key-positions = <2 3 4>;
+          key-positions = <1 2 3>;
           bindings = <&kp BSPC>;
       }; 
       combo_adjust {
