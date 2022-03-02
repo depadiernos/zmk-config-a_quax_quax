@@ -10,38 +10,40 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+    tri_layer {
+      if-layers = <1 2>;
+      then-layer = <3>;
+    };
+  };
   combos {
     compatible = "zmk,combos";
-      combo_tab {
-          timeout-ms = <50>;
-          key-positions = <10 14>;
-          bindings = <&kp TAB>;
-      };
       combo_esc {
           timeout-ms = <50>;
           key-positions = <0 4>;
           bindings = <&kp ESC>;
       }; 
+      combo_tab {
+          timeout-ms = <50>;
+          key-positions = <10 14>;
+          bindings = <&kp TAB>;
+      };
       combo_grave {
           timeout-ms = <50>;
-          key-positions = <0 1 2>;
+          key-positions = <0 1>;
           bindings = <&kp GRAVE>;
       }; 
       combo_quote {
           timeout-ms = <50>;
-          key-positions = <10 11 12>;
+          key-positions = <1 2>;
           bindings = <&kp SQT>;
       }; 
       combo_backspace {
           timeout-ms = <50>;
-          key-positions = <1 2 3>;
+          key-positions = <2 3>;
           bindings = <&kp BSPC>;
       }; 
-      combo_adjust {
-          timeout-ms = <50>;
-          key-positions = <30 33>;
-          bindings = <&sl 2>;
-      };
     };
   behaviors {
     hm: homerow_mods {
